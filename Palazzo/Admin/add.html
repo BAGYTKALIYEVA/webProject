@@ -1,0 +1,65 @@
+<html>
+
+<head>
+	<title>Одежда</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/Palazzo/CSS/add.css">
+</head>
+
+<body class="telo">
+	<div class="header">
+		<a>PALAZZO</a>
+		<a href="/Palazzo/site1.php" style="padding-left:60px;padding-right:60px;">ГЛАВНАЯ</a>
+		<a href="/Palazzo/man.php" style="padding-left:60px;padding-right:60px;">МУЖСКОЙ ОТДЕЛ</a>
+		<a href="/Palazzo/woman.php" style="padding-left:60px;padding-right:60px;">ЖЕНСКИЙ ОТДЕЛ</a>
+		<a href="/Palazzo/Admin/admin.php" style ="padding-left:60px;padding-right:60px;">АДМИН</a>
+	</div>
+		<div class="container">  
+			<form id="contact" action="temp.php" method="post">
+				<h3>Add new cloth</h3>
+				<h4>Enter your variables</h4>
+				<fieldset>
+					<input placeholder="Type" name="Type"  type="text" tabindex="1" required autofocus>
+				</fieldset>
+				<fieldset>
+					<input placeholder="Headline" name="Zagolovok" type="text" tabindex="2" required >
+				</fieldset>
+				<fieldset>
+					<input placeholder="Price"  name="Price" type="number" tabindex="3" required>
+					<input placeholder="Size" name="Size" type="number" tabindex="5" required>
+				</fieldset>
+				<fieldset>
+					<textarea placeholder="About..." name="About" tabindex="6" required></textarea>
+				</fieldset>
+				<fieldset>
+					<input placeholder="First Image" name="Photo1" type="text" tabindex="7" required >
+				</fieldset>
+				<fieldset>
+					<input placeholder="Second Image" name="Photo2" type="text" tabindex="8" required >
+				</fieldset>
+				<fieldset>
+					<input placeholder="Third Image" name="Photo3" type="text" tabindex="9" required >
+				</fieldset>
+				<fieldset>
+					<input placeholder="Country" name="Country" type="text" tabindex="10" required >
+				</fieldset>
+				<fieldset>
+					<input placeholder="Composition" name="Sostav" type="text" tabindex="11" required >
+				</fieldset>
+				<fieldset>
+					<p>Gender</p>
+						<select name="Gender" id="Gender"   required> 
+								<option selected disabled hidden></option> 
+								<option value="Man">Man</option> 
+								<option value="Woman">Woman</option> 
+						</select> 			  
+					</fieldset>
+				<fieldset>
+					<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+				</fieldset>
+				</form>
+		  </div>
+
+</body>
+
+</html>
